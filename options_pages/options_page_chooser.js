@@ -26,7 +26,7 @@ function openExtPage(url) {
         chrome.tabs.create({
             index: tab.index + 1,
             url: url,
-            active: true,
+            active: false,
             openerTabId: tab.id
         });
     })
